@@ -18,12 +18,16 @@
 
 Strom = Bewegung von Ladungsträgern
 * Elektronen (z.B. in Metallen)
-** negativ mit Elementarladung Q=-e geladen
-** e=1,602*10⁻¹⁹C [Q]=[e]=C Coulomb (1.1)
+	* negativ mit Elementarladung ![equation](http://latex.codecogs.com/gif.latex?Q%3D-e) geladen
+	* ![equation](http://latex.codecogs.com/gif.latex?e=1,602*10⁻¹⁹C)
+	* ![equation](http://latex.codecogs.com/gif.latex?[Q]=[e]=C) Coulomb (1.1)
 * Ionen (z.B. Flüssigkeiten, Plasma, ...)
 * Analogie: Fließendes Wasser
-** Maß für dessen Flussvolumen V pro Zeit t - (dv/dt) 
-** vergleichbar -> Maß für Stromfluß i: Ladung Q pro Zeit t -> i=(dQ/dt) (1.2) [i] = [Q]/[t] = C/s = A Ampere
+	* Maß für dessen Flussvolumen V pro Zeit t
+		* ![equation](http://latex.codecogs.com/gif.latex?%5Cfrac%7Bdv%7D%7Bdt%7D)
+	* vergleichbar -> Maß für Stromfluß i: Ladung Q pro Zeit t
+		* ![equation](http://latex.codecogs.com/gif.latex?i%3D%5Cfrac%7BdQ%7D%7Bdt%7D) (1.2)
+		* ![equation](http://latex.codecogs.com/gif.latex?%5Bi%5D%20%3D%20%5BQ%5D/%5Bt%5D%20%3D%20C/s%20%3D%20A) Ampere
 
 ###Beispiel: Stromfluß durch Querschnittsfläche einer Leiters:
 
