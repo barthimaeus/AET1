@@ -25,28 +25,35 @@ Strom = Bewegung von Ladungsträgern
 * Analogie: Fließendes Wasser
 	* Maß für dessen Flussvolumen V pro Zeit t
 		* ![equation](http://latex.codecogs.com/gif.latex?%5Cfrac%7Bdv%7D%7Bdt%7D)
-	* vergleichbar -> Maß für Stromfluß i: Ladung Q pro Zeit t
-		* ![equation](http://latex.codecogs.com/gif.latex?i%3D%5Cfrac%7BdQ%7D%7Bdt%7D) (1.2)
+	* vergleichbar -> Maß für Stromfluß i: Ladung Q pro Zeit t (1.2) 
+		* ![equation](http://latex.codecogs.com/gif.latex?i%3D%5Cfrac%7BdQ%7D%7Bdt%7D) 
 		* ![equation](http://latex.codecogs.com/gif.latex?%5Bi%5D%20%3D%20%5BQ%5D/%5Bt%5D%20%3D%20C/s%20%3D%20A) Ampere
 
 ###Beispiel: Stromfluß durch Querschnittsfläche einer Leiters:
 
 * positive Ladungsträger Q>0
-	* Zählweise: Durchfluss v.l.n.r i = (dQ)/(dt) > 0
-	* umgekehrte Zählweise v.r.n.l i = (dQ)/(dt) < 0
+	* Zählweise: Durchfluss v.l.n.r 
+		* ![equation](http://latex.codecogs.com/gif.latex?i%20%3D%20%28dQ%29/%28dt%29%20%3E%200)
+	* umgekehrte Zählweise v.r.n.l 
+ * 		* ![equation](http://latex.codecogs.com/gif.latex?i%20%3D%20%28dQ%29/%28dt%29%20%3C%200)
 * negative Ladungsträger Q<0
-	* Zählweise: Durchfluss v.r.n.l i = (dQ)/(dt) > 0
-	* umgekehrte Zählweise v.l.n.r i = (dQ)/(dt) < 0
+	* Zählweise: Durchfluss v.r.n.l 
+		* ![equation](http://latex.codecogs.com/gif.latex?i%20%3D%20%28dQ%29/%28dt%29%20%3E%200)
+	* umgekehrte Zählweise v.l.n.r 
+		* ![equation](http://latex.codecogs.com/gif.latex?i%20%3D%20%28dQ%29/%28dt%29%20%3C%200)
 
 * positiver Strom wenn:
 	* positive Ladungsträger sich in Richtung des Bezugspfeils bewegen (tech. Stromrichtung)
 	* negative Ladungsträger sich entgegen der Richtung des Bezugspfeils bewegen (phys. Stromrichtung)
 
 * typische Stromverläufe nach (1.2)
-	* (dQ)/(dt)=I konstant: Gleichstrom
-	* (dQ)/(dt)=i(t) zeitabhängig mit Mittelwert Null über eine Periodendauer Tp
-(1/Tp)*Int_Tp(i(t)dt=0: Wechselstrom
-		* z.B. sinusförmig mit i(t)=sin(wt)=sin(((2pi)/Tp)*t)
+	* Gleichstrom: konstant
+		* ![equation](http://latex.codecogs.com/gif.latex?%28dQ%29/%28dt%29%3DI) 
+	* Wechselstrom: zeitabhängig mit Mittelwert Null über eine Periodendauer Tp
+		* ![equation](http://latex.codecogs.com/gif.latex?%28dQ%29/%28dt%29%3Di%28t%29) 
+			* ![equation](http://latex.codecogs.com/gif.latex?%281/T_p%29*%5Cint_T_p%28i%28t%29dt%29%3D0)
+			* z.B. sinusförmig
+				* ![equation](http://latex.codecogs.com/gif.latex?i%28t%29%3Dsin%28wt%29%3Dsin%28%28%282%5Cpi%29/T_p%29*t%29)
 
 * Bezeichnungsweise
 	* Zeitwerte mit Kleinbuchstaben "i(t)"
