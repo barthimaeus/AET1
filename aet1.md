@@ -22,12 +22,14 @@ Strom = Bewegung von Ladungsträgern
 	* ![equation](http://latex.codecogs.com/gif.latex?e=1,602*10⁻¹⁹C)
 	* ![equation](http://latex.codecogs.com/gif.latex?[Q]=[e]=C) Coulomb (1.1)
 * Ionen (z.B. Flüssigkeiten, Plasma, ...)
-* Analogie: Fließendes Wasser
+
+Analogie: Fließendes Wasser
 	* Maß für dessen Flussvolumen V pro Zeit t
 		* ![equation](http://latex.codecogs.com/gif.latex?%5Cfrac%7Bdv%7D%7Bdt%7D)
 	* vergleichbar -> Maß für Stromfluß i: Ladung Q pro Zeit t (1.2) 
 		* ![equation](http://latex.codecogs.com/gif.latex?i%3D%5Cfrac%7BdQ%7D%7Bdt%7D) 
-		* ![equation](http://latex.codecogs.com/gif.latex?%5Bi%5D%20%3D%20%5BQ%5D/%5Bt%5D%20%3D%20C/s%20%3D%20A) Ampere
+		* Einheit
+			* ![equation](http://latex.codecogs.com/gif.latex?%5Bi%5D%3D%5BQ%5D/%5Bt%5D%3DC/s%3DA%5C%3BAmpere)
 
 ###Beispiel: Stromfluß durch Querschnittsfläche einer Leiters:
 
@@ -35,7 +37,7 @@ Strom = Bewegung von Ladungsträgern
 	* Zählweise: Durchfluss v.l.n.r 
 		* ![equation](http://latex.codecogs.com/gif.latex?i%20%3D%20%28dQ%29/%28dt%29%20%3E%200)
 	* umgekehrte Zählweise v.r.n.l 
- * 		* ![equation](http://latex.codecogs.com/gif.latex?i%20%3D%20%28dQ%29/%28dt%29%20%3C%200)
+		* ![equation](http://latex.codecogs.com/gif.latex?i%20%3D%20%28dQ%29/%28dt%29%20%3C%200)
 * negative Ladungsträger Q<0
 	* Zählweise: Durchfluss v.r.n.l 
 		* ![equation](http://latex.codecogs.com/gif.latex?i%20%3D%20%28dQ%29/%28dt%29%20%3E%200)
@@ -50,35 +52,39 @@ Strom = Bewegung von Ladungsträgern
 	* Gleichstrom: konstant
 		* ![equation](http://latex.codecogs.com/gif.latex?%28dQ%29/%28dt%29%3DI) 
 	* Wechselstrom: zeitabhängig mit Mittelwert Null über eine Periodendauer Tp
-		* ![equation](http://latex.codecogs.com/gif.latex?%28dQ%29/%28dt%29%3Di%28t%29) 
-			* ![equation](http://latex.codecogs.com/gif.latex?%281/T_p%29*%5Cint_T_p%28i%28t%29dt%29%3D0)
+		* ![equation](http://latex.codecogs.com/gif.latex?%28dQ%29/%28dt%29%3Di%28t%29%5Cqquad%281/T_p%29*%5Cint_T_p%28i%28t%29dt%29%253D0)
 			* z.B. sinusförmig
 				* ![equation](http://latex.codecogs.com/gif.latex?i%28t%29%3Dsin%28wt%29%3Dsin%28%28%282%5Cpi%29/T_p%29*t%29)
 
 * Bezeichnungsweise
-	* Zeitwerte mit Kleinbuchstaben "i(t)"
+	* Zeitwerte mit Kleinbuchstaben
+		* ![equation](http://latex.codecogs.com/gif.latex?i%28t%29)
 	* Mittelwerte - insbesondere auch Gleichgrößen - mit Großbuchstaben
-	* Amplituden mit Großbuchstaben der (mit Dach) -> "I^"
+		* ![equation](http://latex.codecogs.com/gif.latex?I)
+	* Amplituden mit Großbuchstaben der (mit Dach)
+		* ![equation](http://latex.codecogs.com/gif.latex?%5Chat%7BI%7D)
 
 ## Potentiale und Spannungen
 
-Ursache für Strömung einer Flüssigkeit im Rohr: Druckdifferenz
-* p1-p1 = 0 -> Keine Strömung
-* p1-p2 > 0 -> Strömung nach Rechts
-* p1-p2 < 0 -> "" links
-analog: elektrische Potentialdifferenz - Spannung U - führt zu Stromfluß in einem Widerstand R
-* Spannung mit Bezugspfeil über Widerstand markiert
-* Fälle:
-	* U=0 (Potential links und rechts gleich) -> kein Strom i = 0
-	* U>0 (Potential links > rechts) -> Strom i>0
-	* U<0 (Potential rechts > links) -> Strom i<0
-* Einheit [u] = V Volt
+Ursache für Strömung einer Flüssigkeit im Rohr ist die Druckdifferenz:
+
+![equation](http://latex.codecogs.com/gif.latex?%5Cbegin%7Bmatrix%7D%20p1-p2%20%3D%200%20%26%20-%20%5C%5C%20p1-p2%20%3E%200%20%26%20v.l.n.r%20%5C%5C%20p1-p2%20%3C%200%20%26%20v.r.n.l%20%5Cend%7Bmatrix%7D)
+
+Analogie: Elektrische Potentialdifferenz - Spannung U - führt zu Stromfluß in einem Widerstand R
+
+![equation](http://latex.codecogs.com/gif.latex?%5Cbegin%7Bmatrix%7D%20U%3D0%20%26%20i%3D0%5C%5C%20U%3E0%20%26%20i%3E0%5C%5C%20U%3C0%20%26%20i%3C0%20%5Cend%7Bmatrix%7D)
+
+Einheit 
+
+![equation](http://latex.codecogs.com/gif.latex?%5Bu%5D%20%3D%20V%5C%3BVolt)
 
 ## Widerstand
 Fluß durch ein Rohr ist begrenzt, hängt von Druckdifferenz ab -> Rohr setzt Fluß Wiederstand entgegen.
-Analogie: in einem elektrischen Widerstand R ist Strom proportional zu Spannung u -> Ohmsches Gesetz:
-* R=(u/i) (1.3)
-* [R]=[u]/[i]=V/A='omega' Ohm 
+Analogie: in einem elektrischen Widerstand R ist Strom proportional zu Spannung  u
+* (1.3) Ohmsches Gesetz:
+	* ![equation](http://latex.codecogs.com/gif.latex?R%3D%28u/i%29)
+	* Einheit
+		* ![equation](http://latex.codecogs.com/gif.latex?%5BR%5D%3D%5Bu%5D/%5Bi%5D%3DV/A%3D%5COmega%5C%3BOhm)
 
 Widerstand R eines Leiters nimmt
 * mit steigender Länge l zu
