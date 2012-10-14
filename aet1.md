@@ -24,12 +24,12 @@ Strom = Bewegung von Ladungsträgern
 * Ionen (z.B. Flüssigkeiten, Plasma, ...)
 
 Analogie: Fließendes Wasser
-	* Maß für dessen Flussvolumen V pro Zeit t
-		* ![equation](http://latex.codecogs.com/gif.latex?%5Cfrac%7Bdv%7D%7Bdt%7D)
-	* vergleichbar -> Maß für Stromfluß i: Ladung Q pro Zeit t (1.2) 
-		* ![equation](http://latex.codecogs.com/gif.latex?i%3D%5Cfrac%7BdQ%7D%7Bdt%7D) 
-		* Einheit
-			* ![equation](http://latex.codecogs.com/gif.latex?%5Bi%5D%3D%5BQ%5D/%5Bt%5D%3DC/s%3DA%5C%3BAmpere)
+* Maß für dessen Flussvolumen V pro Zeit t
+	* ![equation](http://latex.codecogs.com/gif.latex?%5Cfrac%7Bdv%7D%7Bdt%7D)
+* vergleichbar -> Maß für Stromfluß i: Ladung Q pro Zeit t (1.2) 
+	* ![equation](http://latex.codecogs.com/gif.latex?i%3D%5Cfrac%7BdQ%7D%7Bdt%7D) 
+	* Einheit
+		* ![equation](http://latex.codecogs.com/gif.latex?%5Bi%5D%3D%5BQ%5D/%5Bt%5D%3DC/s%3DA%5C%3BAmpere)
 
 ###Beispiel: Stromfluß durch Querschnittsfläche einer Leiters:
 
@@ -52,9 +52,9 @@ Analogie: Fließendes Wasser
 	* Gleichstrom: konstant
 		* ![equation](http://latex.codecogs.com/gif.latex?%28dQ%29/%28dt%29%3DI) 
 	* Wechselstrom: zeitabhängig mit Mittelwert Null über eine Periodendauer Tp
-		* ![equation](http://latex.codecogs.com/gif.latex?%28dQ%29/%28dt%29%3Di%28t%29%5Cqquad%281/T_p%29*%5Cint_T_p%28i%28t%29dt%29%253D0)
+		* ![equation](http://latex.codecogs.com/gif.latex?%28dQ%29/%28dt%29%3Di%28t%29%5Cqquad%281/T_p%29*%5Cint_T_p%28i%28t%29dt%29%3D0)
 			* z.B. sinusförmig
-				* ![equation](http://latex.codecogs.com/gif.latex?i%28t%29%3Dsin%28wt%29%3Dsin%28%28%282%5Cpi%29/T_p%29*t%29)
+				* ![equation](http://latex.codecogs.com/gif.latex?i%28t%29%3D%5Chat%7BI%7Dsin%28wt%29%3D%5Chat%7BI%7Dsin%28%28%282%5Cpi%29/T_p%29*t%29)
 
 * Bezeichnungsweise
 	* Zeitwerte mit Kleinbuchstaben
@@ -88,23 +88,28 @@ Analogie: in einem elektrischen Widerstand R ist Strom proportional zu Spannung 
 
 Widerstand R eines Leiters nimmt
 * mit steigender Länge l zu
-* " " Querschnittsfläche ab
-* R='rho'*l/A ('rho' ist spezifischer Wiederstand)
-	* 'rho' = ([R][A])/[l] = ('omega'*m²)/m = 'omega'm
+* mit steigender Querschnittsfläche ab
+* Spezifischer Wiederstand
+	* ![equation](http://latex.codecogs.com/gif.latex?R%3D%5Cvarrho*1/A) 
+	* ![equation](http://latex.codecogs.com/gif.latex?%5Cvarrho%3D%28%5BR%5D%5BA%5D%29/%5Bl%5D%20%3D%20%5Cfrac%7B%28%5COmega*m%5E2%29%7D%7Bm%7D%20%3D%20%5COmega%20m)
 	* temperaturabhängig mit Temperaturkoeffizienten 'alpha'
 		* 'alpha' für lineare Näherung:
-			* 'rho'(t)='rho'(T0)*(1+'alpha(T-T0))
+			* ![equation](http://latex.codecogs.com/gif.latex?%5Cvarrho%28t%29%3D%5Cvarrho%28T_0%29*%281&plus;%5Calpha%20%28T-T_0%29%29)
 		* 'alpha' und 'beta' für quadratische Näherung
-			* 'rho'(t)='rho(T0)(1+'alpha'(T-T0)+'beta'(T-T0)²)
-	mit Temperatur T, für die 'rho' angegeben werden soll, und Bezugstemperatur T0,
-	für die 'alpha' und 'beta' angegeben werden.
-	* [T0][T0]=K Kelvin ['alpha']=K⁻¹ ['beta']=K⁻² wobei für Konstantan 'alpha'=0
-	* Kehrwert: Leitwert G=1/R (1.5)
-		* [G] = 1/[R] = 1/'omega' = S Siemens
-		für einen Leiter entsprechend (1.4) G = K*(A/l) (1.6)
-		mit spezifischem Leitwert K als temperaturabhängiger Materialkonstante
-		[K] = 1/['rho'] = 1/['omega'*m] = S/m
-		Folgende Betrachtung zunächst am Beispiel elektrischer Widerstände; weitere Bauelemente mit anderem Verhalten, z.B.
-			* Induktivitäten 2.3.1
-			* Kapazitäten 2.3.2
-			* Halbleiter AET2
+			* ![equation](http://latex.codecogs.com/gif.latex?%5Cvarrho%28t%29%3D%5Cvarrho%28T_0%29%281&plus;%5Calpha%28T-T_0%29&plus;%5Cbeta%28T-T0%29%5E2%29)
+			* mit Temperatur T, für die 'rho' angegeben werden soll, und Bezugstemperatur T0, für die 'alpha' und 'beta' angegeben werden.
+	* ![equation](http://latex.codecogs.com/gif.latex?%5BT%5D%5BT0%5D%3DK%5C%3BKelvin%20%5Cquad%5B%5Calpha%5D%3DK%5E%7B-1%7D%5B%5Cbeta%5D%3DK%5E%7B-2%7D)
+		* wobei für Konstantan 'alpha'=0
+	* (1.5) Kehrwert ist der Leitwert 
+		* ![equation](http://latex.codecogs.com/gif.latex?G%3D1/R)
+		* Einheit
+			* ![equation](http://latex.codecogs.com/gif.latex?%5BG%5D%20%3D%201/%5BR%5D%20%3D%201/%5COmega%20%3D%20S%5C%3B%20Siemens)
+			* für einen Leiter entsprechend (1.4) 
+				* ![equation](http://latex.codecogs.com/gif.latex?G%20%3D%20K*%28A/l%29) (1.6) mit spezifischem Leitwert K als temperaturabhängiger Materialkonstante
+				* Einheit
+					* ![equation](http://latex.codecogs.com/gif.latex?%5BK%5D%20%3D%201/%5B%5Cvarrho%5D%20%3D%201/%5B%5COmega*m%5D%20%3D%20S/m)
+
+Folgende Betrachtung zunächst am Beispiel elektrischer Widerstände; weitere Bauelemente mit anderem Verhalten, z.B.
+* Induktivitäten 2.3.1
+* Kapazitäten 2.3.2
+* Halbleiter AET2
