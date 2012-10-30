@@ -301,3 +301,12 @@ Schaltung besteht aus Spannungsquelle, einem Widerstand in Reihe und dann zwei W
 		* Widerstand der Gesamtschaltung nach (2.24)
 			* ![equation](http://latex.codecogs.com/gif.latex?U_0/R_1%20%3D%20R_1&plus;%20%28%28R_2*R_3%29/%28R_2&plus;R_3%29%29)
 		* abhängige Gleichungen (2.14) (2.17) nicht verwendet
+* Vorgehensweise
+	* Alle Ströme und Spannungen im Schaltbild markieren (willkuürliche Polarität)
+	* für k-1 von k Noten Knotengleichungen aufstellen
+	* m Maschengleichungen so aufstellen, dass jede Masche mindestens einen Zweig als einzige durchläuft
+	* Strom-Spannungs-Beziehungen für die Elemente aufstellen
+	* Gleichungssystem mit k-1+m Unbekannnten nach den Punkten 2,3,4 lösen
+* Überlagerungssatz:
+	* Der Gesamtstrom in einem Zweig eines linearen Netzwerks ergibt sich aus der Summe der von den einzelnen Spannungsquellen herrührenden Teilströme.
+		* Gilt für Netzwerke mit linearen Elementen, z.B. Widerständen mit U=R*i nach (1.3)
