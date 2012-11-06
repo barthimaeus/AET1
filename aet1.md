@@ -302,7 +302,7 @@ Schaltung besteht aus Spannungsquelle, einem Widerstand in Reihe und dann zwei W
 			* ![equation](http://latex.codecogs.com/gif.latex?U_0/R_1%20%3D%20R_1&plus;%20%28%28R_2*R_3%29/%28R_2&plus;R_3%29%29)
 		* abhängige Gleichungen (2.14) (2.17) nicht verwendet
 * Vorgehensweise
-	* Alle Ströme und Spannungen im Schaltbild markieren (willkuürliche Polarität)
+	* Alle Ströme und Spannungen im Schaltbild markieren (willkürliche Polarität)
 	* für k-1 von k Noten Knotengleichungen aufstellen
 	* m Maschengleichungen so aufstellen, dass jede Masche mindestens einen Zweig als einzige durchläuft
 	* Strom-Spannungs-Beziehungen für die Elemente aufstellen
@@ -310,3 +310,107 @@ Schaltung besteht aus Spannungsquelle, einem Widerstand in Reihe und dann zwei W
 * Überlagerungssatz:
 	* Der Gesamtstrom in einem Zweig eines linearen Netzwerks ergibt sich aus der Summe der von den einzelnen Spannungsquellen herrührenden Teilströme.
 		* Gilt für Netzwerke mit linearen Elementen, z.B. Widerständen mit U=R*i nach (1.3)
+
+
+## Berechnung von Netzwerken mit Induktivitäten und Kapazitäten
+### Induktivität
+"speichert Fluss" - Analogie: von Flüssigkeit durchströmtes langes Rohr
+* Änderung des Flusses (entspricht "i") erfordert Beschleunigung der Flüssigkeit -> Überwindung der Massenträgheit durch Druckdifferenz. p_⁻p_2 (entspricht "u")
+	* Spannung proportional zur Ableitung des Stromes
+	* ![equation](http://latex.codecogs.com/gif.latex?u%3DL*%5Cfrac%7Bdi%7D%7Bdt%7D)
+	* ![Schaltsymbol](http://upload.wikimedia.org/wikipedia/de/thumb/9/91/Spule.svg/200px-Spule.svg.png)
+	* Einheit
+		* ![equation](http://latex.codecogs.com/gif.latex?%5BL%5D%3D%5Cfrac%7Bu%7D%7B%5Cfrac%7Bi%7D%7Bt%7D%7D%3D%5Cfrac%7BVs%7D%7BA%7D%5C%3BH%20Henry)
+		* Lenzsche Regel
+			* induzierte Spannung wirkt der Stromänderung entgegen
+* Parallelschaltung
+	* Knotengleichung 
+		*![equation](http://latex.codecogs.com/gif.latex?i_0%20%3D%20%5Csum_%7Bk%3D1%7D%5Enik)
+	* ![equation](http://latex.codecogs.com/gif.latex?%5Cfrac%7Bdi_0%7D%7Bdt%7D%3D%5Csum_%7Bk%3D1%7D%5E%7Bn%7D%5Cfrac%7Bdi_k%7D%7Bdt%7D)
+	* ![equation](http://latex.codecogs.com/gif.latex?%5Cfrac%7Bdi_0%7D%7Bdt%7D%3Du_0*%5Csum_%7Bk%3D1%7D%5E%7Bn%7D%5Cfrac%7B1%7D%7BL_k%7D)
+	* (2.49)
+		* ![equation](http://latex.codecogs.com/gif.latex?L_0%20%3D%20%5Cfrac%7B1%7D%7B%5Csum_%7Bk%3D1%7D%5En%5Cfrac%7B1%7D%7BL_k%7D%7D)
+* Reihenschaltung
+	* Maschengleichung
+		* ![equation](http://latex.codecogs.com/gif.latex?u_0%3D%5Csum_%7Bk%3D1%7D%5E%7Bn%7Du_k)
+	* mit (2.48)
+		* ![equation](http://latex.codecogs.com/gif.latex?u_0%3D%5Cfrac%7Bdi_0%7D%7Bdt%7D*%5Csum_%7Bk%3D1%7D%5E%7Bn%7DL_k)
+		* (2.50)
+		* ![equation](http://latex.codecogs.com/gif.latex?L_0%3D%5Csum_%7Bk%3D1%7D%5E%7Bn%7DL_k)
+	* Addition der Induktivitäten
+		* z.B. für 2 Induktivitäten L1 in Reihe
+			* ![equation](http://latex.codecogs.com/gif.latex?L_0%3D2*L_1)
+* Verbindung mit Gleichspannungsquelle U_0 (Stromkreis aus Quelle, Schalter S und Induktivität L)
+	* Für t<=t_0, i=0
+	* Schalter S ab t=t_0 geschlossen
+		* Für t>=t_0 gilt mit (2.48)
+			* ![equation](http://latex.codecogs.com/gif.latex?U_0%3Du%3DL*%5Cfrac%7Bdi%7D%7Bdt%7D)
+			* ![equation](http://latex.codecogs.com/gif.latex?i%3D%5Cfrac%7BU_0%7D%7BL%7D*%5Cint_%7Bt_0%7D%5E%7Bt%7Dd%5Ctau)
+		* Linearer Anstieg des Stroms (2.51)
+			* ![equation](http://latex.codecogs.com/gif.latex?i%3D%5Cfrac%7BU_0%7D%7BL%7D*%28t-t_0%29)
+		* gespeicherte Energie
+			* ![equation](http://latex.codecogs.com/gif.latex?W%28t%29%3D%5Cint_%7Bt_0%7D%5E%7Bt%7Du%28%5Ctau%29*i%28%5Ctau%29d%5Ctau)
+			* (2.51)
+			* ![equation](http://latex.codecogs.com/gif.latex?W%28t%29%3D%5Cfrac%7BU_0%5E2%7D%7BL%7D%5Cint_%7Bt_0%7D%5E%7Bt%7D%28%5Ctau-t_0%29d%5Ctau)
+			* ![equation](http://latex.codecogs.com/gif.latex?W%28t%29%3D%5Cfrac%7B1%7D%7B2%7D%5Cfrac%7BU_0%5E2%7D%7BL%7D%28t-t_0%29%5E2)
+			* erneute Anwendung (2.51) ergibt (2.52)
+			* ![equation](http://latex.codecogs.com/gif.latex?W%28i%29%3D%5Cfrac%7B1%7D%7B2%7DL*i%5E2)
+	* Anmerkung - Abschalten von S für i>0
+		* ![equation](http://latex.codecogs.com/gif.latex?%5Cfrac%7Bdi%7D%7Bdt%7D%3C%3C0)
+		* nach (2.48) U<<0
+		* Funkenbildung an Kontakten, bei Halbleiterschaltern; Freilauf erforgerlich
+		
+### Kapazität - Kondensator
+Speichert Ladung - Analogie: durch Membran unterbrochenes, flüssigkeitgefülltes Rohr
+* Änderung der Druckdifferenz p_1-p_2 (ent. "U")
+* Fluss (ent. "i")
+* Stromfluss proportional zur Ableitung der Spannung (2.53)
+	* ![equation](http://latex.codecogs.com/gif.latex?i%3DC*%5Cfrac%7Bdu%7D%7Bdt%7D)
+* Schaltzeichen
+	* ![Schaltzeichen](http://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Kondensatoren-Schaltzeichen-Reihe.svg/500px-Kondensatoren-Schaltzeichen-Reihe.svg.png)
+	* Elektrolytkondensator (Elko) darf nur mit Spannungen U>=0 betrieben werden
+* Einheit der Kapazität
+	* ![equation](http://latex.codecogs.com/gif.latex?%5BC%5D%3D%5Cfrac%7B%5Bi%5D%7D%7B%5Cfrac%7Bu%7D%7Bt%7D%7D%3D%5Cfrac%7BAs%7D%7BV%7D%3DF%5C%3B%20Farad)
+* (2.53)
+	* i=0 für Gleichspannung mit (du/dt)=0
+	* i!=0 für Wechselspannung - mit (du/dt)!=0
+* Parallelschaltung
+	* Knotengleichung
+	* ![equation](http://latex.codecogs.com/gif.latex?C_0%3D%5Csum_%7Bk%3D0%7D%5E%7Bn%7DC_k)
+	* Addition der Kapazitäten z.b. für zwei parallele Kapazitäten C_1
+		* ![equation](http://latex.codecogs.com/gif.latex?C_0%3D2*C_1)
+* Reihenschaltung
+	* Maschengleichung
+	* ![equation](http://latex.codecogs.com/gif.latex?%5Cfrac%7Bdu_0%7D%7Bdt%7D%3D%5Csum_%7Bk%3D1%7D%5E%7Bn%7D%5Cfrac%7Bdu_k%7D%7Bdt%7D)
+	* ![equation](http://latex.codecogs.com/gif.latex?%5Cfrac%7Bdu_0%7D%7Bdt%7D%3D%5Csum_%7Bk%3D1%7D%5E%7Bn%7D%5Cfrac%7Bi_0%7D%7BC_k%7D)
+	* ![equation](http://latex.codecogs.com/gif.latex?i_0%3D%5Cfrac%7B1%7D%7B%5Csum_%7Bk%3D1%7D%5E%7Bn%7D%5Cfrac%7B1%7D%7BC_k%7D%7D*%5Cfrac%7Bdu_0%7D%7Bdt%7D)
+	* (2.55)
+		* ![equation](http://latex.codecogs.com/gif.latex?i_0%3DC_0%5Cfrac%7Bdu%7D%7Bdt%7D)
+	* (2.56)
+		* ![equation](http://latex.codecogs.com/gif.latex?C_0%3D%5Cfrac%7B1%7D%7B%5Csum_%7Bk%3D1%7D%5E%7Bn%7D%5Cfrac%7B1%7D%7BC_k%7D%7D)
+	* Addition der Kehrwerte der Kapazitäten, z.B. für 2 Kapazitäten C1 in Reihe
+		* ![equation](http://latex.codecogs.com/gif.latex?C_0%3D%5Cfrac%7BC_1%7D%7B2%7D)
+* Entladung über Widerstand (Reihenschaltung aus Kondensator, Schalter S, Widerstand R)
+	* Für t<=t_0 u=U_0
+	* Schalter S ab t=t_0 geschlossen
+	* Für t>=t_0 gilt (2.53)
+		* ![equation](http://latex.codecogs.com/gif.latex?-i%3DC*%5Cfrac%7Bdu%7D%7Bdt%7D)
+	* Ohmsches Gesetz i=(U/R) implizier Differentialgleichgung
+		* ![equation](http://latex.codecogs.com/gif.latex?%5Cfrac%7Bdu%7D%7Bdt%7D%3D-1%5Cfrac%7B1%7D%7BRC%7D*U)
+	* Lösung:
+		* ![equation](http://latex.codecogs.com/gif.latex?u%28t%29%3DU_A*e%5E%28-%5Cfrac%7Bt-t_0%7D%7BR*C%7D%29)
+		* Anfangsbedingung: 
+			* ![equation](http://latex.codecogs.com/gif.latex?u%28t_0%29%3DU_0%3DU_a*e%5E%7B-%5Cfrac%7B0%7D%7BR*C%7D%7D)
+		* Allgemeine Lösung (2.57):
+			* ![equation](http://latex.codecogs.com/gif.latex?u%28t%29%3DU_0*e%5E%7B-%5Cfrac%7Bt-t_0%7D%7BR*C%7D%7D)
+			* ![equation](http://latex.codecogs.com/gif.latex?%5Clim%5Climits_%7Bt%20%5Crightarrow%20%5Cinfty%7D%7Bu%28t%29%7D%3D0)
+		* mit (2.54) ergibt sich für den Strom (2.58)
+			* ![equation](http://latex.codecogs.com/gif.latex?i%3D%5Cfrac%7BU_0%7D%7BR%7D*e%5E%7B-%5Cfrac%7Bt-t_0%7D%7BR*C%7D%7D)
+			* ![equation](http://latex.codecogs.com/gif.latex?%5Clim%5Climits_%7Bn%20%5Crightarrow%20%5Cinfty%7D%7Bi%28t%29%7D%3D0)
+		* Abgegebene Leistung mit (1.7)
+			* ![equation](http://latex.codecogs.com/gif.latex?p%28t%29%3Du%28t%29*i%28t%29)
+			* ![equation](http://latex.codecogs.com/gif.latex?p%28t%29%3D%5Cfrac%7BU_0%5E2%7D%7BR%7D*e%5E%7B-%5Cfrac%7B2%28t-t_0%29%7D%7BRC%7D%7D)
+		* Abgegebene Energie mit (1.8)
+			* ![equation](http://latex.codecogs.com/gif.latex?W%3D%5Cfrac%7BU_0%5E2%7D%7BR%7D%5Cint_%7Bt%3Et_0%7D%5E%7B%5Cinfty%7De%5E%7B-%5Cfrac%7B2%28t-t0%29%7D%7BRC%7D%7Ddt)
+			* (2.59)
+				* ![equation](http://latex.codecogs.com/gif.latex?W%3D0.5*C*U_0%5E2)
