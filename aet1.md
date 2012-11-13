@@ -12,7 +12,7 @@
 * Datenverarbeitung - Informationstechnik
 * Kommunikationstechnik
 
-# Einführung - Grundbegriffe
+# 1 - Einführung - Grundbegriffe
 
 ## Ladung und Strom
 
@@ -165,7 +165,7 @@ Leistung, die u.a. in Widerständen verbraucht wird muß wegen Energieerhaltung 
 			* ![equation](http://latex.codecogs.com/gif.latex?p%20%3D%20u*i%20%3C%200)
 	* Vorzeichen der Größen in Abhängigkeit von Bezugspfeilen zu beachten!
 
-# Stromkreise
+# 2 - Stromkreise
 
 ## Grundregeln
 * Strom fließt im Stromkreis
@@ -414,3 +414,128 @@ Speichert Ladung - Analogie: durch Membran unterbrochenes, flüssigkeitgefüllte
 			* ![equation](http://latex.codecogs.com/gif.latex?W%3D%5Cfrac%7BU_0%5E2%7D%7BR%7D%5Cint_%7Bt%3Et_0%7D%5E%7B%5Cinfty%7De%5E%7B-%5Cfrac%7B2%28t-t0%29%7D%7BRC%7D%7Ddt)
 			* (2.59)
 				* ![equation](http://latex.codecogs.com/gif.latex?W%3D0.5*C*U_0%5E2)
+				
+# 3 - Wechselgrößen
+
+## Einführung, Grundbegriffe
+
+* Anwendung
+	* Netz
+	* elektrische Maschine
+* Hergeleitete Regeln gelten auch für Wechselgrößen
+	* Knotenregel (2.1.1)
+	* Maschenregel (2.1.2)
+	* Strom und Spannung an
+		* Widerständen (1.3)
+		* Induktivitäten (2.49)
+		* Kapazitäten (2.54)
+* Einführung von Berechnungen vereinfachender Darstellung zweckmäßig
+	* Kenngrößen
+	* Zeiger (3.2)
+* Mittelwert Null von Wechselgrößen
+	* Einführung der Kenngröße _Effektivwert_
+	* Wechselspannung mit Effektivwert U bzw. Wechselstrom mit Effektivwert I setzt in Widerstand R gleiche über Periodendauer T_p=(2pi/Omega) gemittelte Leistung wie eine entsprechende Gleichspannung oder entsprechender Gleichstrom um.
+		* ![equation](http://latex.codecogs.com/gif.latex?u%28t%29%3D%5C%5E%7BU%7Dsin%28%5Comega%20t%29)
+		* ![equation](http://latex.codecogs.com/gif.latex?i%28t%29%3D%5Cfrac%7B%5C%5E%7BU%7D%7D%7BR%7Dsin%28%5Comega%20t%29)
+		* ![equation](http://latex.codecogs.com/gif.latex?%3D%5C%5E%7BI%7Dsin%28%5Comega%20t%29)
+	* Leistung (3.1)
+		*  ![equation](http://latex.codecogs.com/gif.latex?p%28t%29%3D%5Cfrac%7B%5C%5E%7BU%7D%7D%7BR%7Dsin%5E2%28%5Comega%20t%29)
+		* Mittelwert über T_p
+			* ![eq](http://latex.codecogs.com/gif.latex?P%3D%5Cfrac%7B1%7D%7BR%7D%5Cfrac%7B1%7D%7BT_p%7D%5C%5E%7BU%7D%5E2%5Cint_%7B0%7D%5E%7BT_p%7Dsin%5E2%5Comega%20t%5C%20dt)
+			* ![eq](http://latex.codecogs.com/gif.latex?P%3D%5Cfrac%7B1%7D%7BR%7D%5Cfrac%7B1%7D%7BT_p%7D%5C%5E%7BU%7D%5E2%5B%5Cfrac%7Bt%7D%7B2%7D%5Cfrac%7B1%7D%7B4%5Comega%7Dsin%282%5Comega%20t%29%5D_0%5E%7BT_p%7D)
+			* (3.2)
+				* ![eq](http://latex.codecogs.com/gif.latex?P%3D%5Cfrac%7B1%7D%7BR%7D%5Cfrac%7B%5C%5EU%5E2%7D%7B2%7D)
+			* (3.3)
+				* ![eq](http://latex.codecogs.com/gif.latex?P%3D%5Cfrac%7BU%5E2%7D%7BR%7D)
+			* mit Effektivwert 
+				* (3.4)
+					* ![eq](http://latex.codecogs.com/gif.latex?U%3D%5Csqrt%7B%5Cfrac%7B1%7D%7BT_p%7D%5Cint_%7B0%7D%5E%7BT_p%7Du%5E2%28t%29dt%7D)
+				* für u(t)=sin\^Usin(\omega t) = \^U/R (3.5)
+				* (3.6)
+					* ![eq](http://latex.codecogs.com/gif.latex?I%3D%5Csqrt%7B%5Cfrac%7B1%7D%7BT_p%7D%5Cint_%7B0%7D%5E%7BT_p%7Di%5E2%28t%29dt%7D)
+				* für i(t)=\^Isin(\omega t)=\^I/\sqrt(2) (3.7)
+	* Graphisch:
+		* ![graph](https://raw.github.com/barthimaeus/AET1/master/1.png)
+				
+## Zeiger
+
+### Grundlagen
+* Beschreibung einer Wechselgröße mit Amplitude und Zeitfunktion
+	* z.B. U(t)=\^U sin(\omega t + \phi u)
+	* sinusförmige Größe fester Frequenz
+		* ![eq](http://latex.codecogs.com/gif.latex?f%3D%5Cfrac%7B%5Comega%7D%7B2%5Cpi%7D%5C%3B%20%5Bf%5D%3D%5Cfrac%7B1%7D%7B%5BT_p%5D%7D%3D%5Cfrac%7B1%7D%7Bs%7D%3DHz)
+		* mit Amplitude und Phasenlage vollständig beschrieben; Anwendung: z.B. Größe im Netz
+		* Darstellung mit Zeiger - vergleichbar mit Vektor, vgl. (4.3.1)
+* Mathematische Grundlagem
+	* siehe Bronstein.
+		* komplexe Schreibweise für Sinus, Cosinusfunktion (3.8), (3.9)
+		* Darstellung eine komplexen Zahl in Polarkoordinaten (3.10)
+		* Real- und Imaginärteil einer komplexen Zahl
+		* Darstellung in der komplexen Ebene
+
+* Idee: Darstellung von Wechselspannungen und -strömen durch komplexe Zeiger, z.B. von 
+	* (3.16)
+		* ![eq](http://latex.codecogs.com/gif.latex?u%3D%5C%5EUcos%28%5Comega%20t&plus;%5Cvarphi%20u%29)
+	* durch (3.17)
+		* ![eq](http://latex.codecogs.com/gif.latex?%5Cunderline%7BU%7D%3D%5C%5EUe%5E%7Bj%5Cvarphi%20u%7D*e%5E%7Bj%5Comega%20t%7D)
+	* mit (3.18)
+		* ![eq](http://latex.codecogs.com/gif.latex?u%20%3D%20Re%5C%7B%5Cunderline%7BU%7D%5C%7D)
+		* ![eq](http://latex.codecogs.com/gif.latex?%3D%20%5C%5EURe%5C%7Be%5E%7Bj%5Cvarphi%20u%7D*e%5E%7Bj%5Comega%20t%7D%5C%7D)
+	* Zeiger \underline{U}
+		* der Länge \^U oder U (Effektivwertzeiger)
+		* der Phasenlage \varphi u für t = 0
+		* rotierend mit \omega t
+		
+### Spannungs und Stromzeiger für Widerstände, Kondensatoren, Induktivitäten
+
+* Strom durch Widerstand R
+	* mit (1.3)
+		* ![eq](http://latex.codecogs.com/gif.latex?i%3D%5Cfrac%7Bu%7D%7BR%7D)
+	* mit (3.19)
+		* ![eq](http://latex.codecogs.com/gif.latex?i%3D%5Cfrac%7B%5C%5EU%7D%7BR%7DRe%5C%7Be%5E%7Bj%5Cvarphiu%7D*e%5E%7Bj%5Comega%20t%7D%5C%7D)
+	* entsprechend (3.18)
+		* ![eq](http://latex.codecogs.com/gif.latex?%3D%20Re%5C%7B%5Cunderline%7BI%7D%5C%7D)
+	* (3.20)
+		* ![eq](http://latex.codecogs.com/gif.latex?%5Cunderline%7BI%7D%3D%5Cfrac%7B%5C%5EU%7D%7BR%7De%5E%7Bj%5Cvarphi%20u%7De%5E%7Bj%5Comega%20t%7D)
+	* mit (3.17) ergibt sich (3.21)
+		* ![eq](http://latex.codecogs.com/gif.latex?%5Cunderline%7BI%7D%3D%5Cfrac%7B%5Cunderline%7BU%7D%7D%7BR%7D)
+	* Zeiger \underline{I}
+		* der Länge \^U/R oder U/R (^=Effektivwertzeiger)
+		* der Phasenlage \varphi u für t=0 wie Spannungszeiger \underline{U}
+		* rotierend mit \omega t
+		
+* Strom durch Kondensator C
+	* mit (2.54)
+		* ![eq](http://latex.codecogs.com/gif.latex?i%3DC*%5Cfrac%7Bdu%7D%7Bdt%7D)
+	* mit (3.19)
+		* ![eq](http://latex.codecogs.com/gif.latex?i%3DC*%5C%5EU*Re%5C%7Be%5E%7Bj%5Cvarphi%20u%7De%5E%7Bj%5Comega%20t%7D*j%5Comega%5C%7D)
+	* wegen
+		* ![eq](http://latex.codecogs.com/gif.latex?j%3De%5E%7Bj*%5Cfrac%7Bpi%7D%7B2%7D%7D)
+	* gilt
+		* ![eq](http://latex.codecogs.com/gif.latex?i%3DRe%5C%7B%5Cunderline%7BI%7D%5C%7D)
+	* mit (3.17) ergibt sich (3.23), (3.24)
+		* ![eq](http://latex.codecogs.com/gif.latex?%5Cunderline%7BI%7D%3Dj%5Comega%20C*%5Cunderline%7BU%7D)
+		* ![eq](http://latex.codecogs.com/gif.latex?%5Cunderline%7BU%7D%3D-%5Cfrac%7Bj%7D%7B%5Comega%20C%7D*%5Cunderline%7BI%7D)
+	* mit frequenzabhängiger kapazitiver Blindwiderstand
+		* ![eq](http://latex.codecogs.com/gif.latex?X_c%3D-%5Cfrac%7B1%7D%7B%5Comega%20C%7D)
+	* Zeiger \underline{I}
+		* der Länge \omega * C * \^U oder \omega * C * U (^=Effektivwertzeiger)
+		* der Phasenlage \varphi u * (\pi/2) für t = 0
+		* rotierend mit \omega t
+		
+* Spannung an Induktivität L
+	* durchflossen von Strom (3.26)
+		* ![eq](http://latex.codecogs.com/gif.latex?i%3D%5C%5EIcos%28%5Comega%20t&plus;%5Cvarphi%20u%20-%20%5Cfrac%7B%5Cpi%7D%7B2%7D%29)
+	* entsprechend (3.18) ergibt sich (3.27)
+		* ![eq](http://latex.codecogs.com/gif.latex?i%3DRe%5C%7B%5Cunderline%7BI%7D%5C%7D)
+	* ![eq](http://latex.codecogs.com/gif.latex?%5Cunderline%7BI%7D%3D%5C%5EIe%5E%7Bj%28%5Cvarphi%20u-%5Cfrac%7B%5Cpi%7D%7B2%7D%29%7D)
+	* ![eq](http://latex.codecogs.com/gif.latex?u%3DL*%5Cfrac%7Bdi%7D%7Bdt%7D)
+	* ...
+	* ![eq](http://latex.codecogs.com/gif.latex?u%3DRe%5C%7BU%5C%7D)
+	* mit (3.27) ergibt sich (3.29)
+		* ![eq](http://latex.codecogs.com/gif.latex?%5Cunderline%7BU%7D%3Dj%5Comega%20L%5Cunderline%7BI%7D)
+	* Zeiger \underline{U}
+		* der Länge \omega L \^I oder \omega L I (^= Effektivwertzeiger)
+		* der Phasenlage \varphi u für t=0
+		* dem Stromzeiger \underline{I} um \pi/2 vorauseilend
+		* rotierend mit \omega t
