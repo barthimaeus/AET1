@@ -1,0 +1,358 @@
+<html>
+<head>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=utf-8">
+</head>
+<body>
+<h1>Literatur</h1>
+
+<ul>
+<li>Bronstein</li>
+<li>Philippow - Grundlagen der Elektrotechnik</li>
+<li>Busch - Elektrotechnik und Elektronik (Bibo)</li>
+</ul>
+
+
+<h1>Anwendungen von Elektrotechnik</h1>
+
+<ul>
+<li>Energieversorgung (Haushalte, Industrie, &hellip;)</li>
+<li>Stromversorgungstechnik</li>
+<li>Antriebstechnik</li>
+<li>Datenverarbeitung - Informationstechnik</li>
+<li>Kommunikationstechnik</li>
+</ul>
+
+
+<h1>Einführung - Grundbegriffe</h1>
+
+<h2>Ladung und Strom</h2>
+
+<p>Strom = Bewegung von Ladungsträgern
+* Elektronen (z.B. in Metallen)
+    * negativ mit Elementarladung <img src="http://latex.codecogs.com/gif.latex?Q%3D-e" alt="equation" /> geladen
+    * <img src="http://latex.codecogs.com/gif.latex?e=1,602*10%E2%81%BB%C2%B9%E2%81%B9C" alt="equation" />
+    * <img src="http://latex.codecogs.com/gif.latex?[Q]=[e]=C" alt="equation" /> Coulomb (1.1)
+* Ionen (z.B. Flüssigkeiten, Plasma, &hellip;)</p>
+
+<p>Analogie: Fließendes Wasser
+* Maß für dessen Flussvolumen V pro Zeit t
+    * <img src="http://latex.codecogs.com/gif.latex?%5Cfrac%7Bdv%7D%7Bdt%7D" alt="equation" />
+* vergleichbar -> Maß für Stromfluß i: Ladung Q pro Zeit t (1.2)
+    * <img src="http://latex.codecogs.com/gif.latex?i%3D%5Cfrac%7BdQ%7D%7Bdt%7D" alt="equation" />
+    * Einheit
+        * <img src="http://latex.codecogs.com/gif.latex?%5Bi%5D%3D%5BQ%5D/%5Bt%5D%3DC/s%3DA%5C%3BAmpere" alt="equation" /></p>
+
+<h3>Beispiel: Stromfluß durch Querschnittsfläche einer Leiters:</h3>
+
+<ul>
+<li>positive Ladungsträger Q>0
+
+<ul>
+<li>Zählweise: Durchfluss v.l.n.r
+
+<ul>
+<li><img src="http://latex.codecogs.com/gif.latex?i%20%3D%20%28dQ%29/%28dt%29%20%3E%200" alt="equation" /></li>
+</ul>
+</li>
+<li>umgekehrte Zählweise v.r.n.l
+
+<ul>
+<li><img src="http://latex.codecogs.com/gif.latex?i%20%3D%20%28dQ%29/%28dt%29%20%3C%200" alt="equation" /></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>negative Ladungsträger Q&lt;0</p>
+
+<ul>
+<li>Zählweise: Durchfluss v.r.n.l
+
+<ul>
+<li><img src="http://latex.codecogs.com/gif.latex?i%20%3D%20%28dQ%29/%28dt%29%20%3E%200" alt="equation" /></li>
+</ul>
+</li>
+<li>umgekehrte Zählweise v.l.n.r
+
+<ul>
+<li><img src="http://latex.codecogs.com/gif.latex?i%20%3D%20%28dQ%29/%28dt%29%20%3C%200" alt="equation" /></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>positiver Strom wenn:</p>
+
+<ul>
+<li>positive Ladungsträger sich in Richtung des Bezugspfeils bewegen (tech. Stromrichtung)</li>
+<li>negative Ladungsträger sich entgegen der Richtung des Bezugspfeils bewegen (phys. Stromrichtung)</li>
+</ul>
+</li>
+<li><p>typische Stromverläufe nach (1.2)</p>
+
+<ul>
+<li>Gleichstrom: konstant
+
+<ul>
+<li><img src="http://latex.codecogs.com/gif.latex?%28dQ%29/%28dt%29%3DI" alt="equation" /></li>
+</ul>
+</li>
+<li>Wechselstrom: zeitabhängig mit Mittelwert Null über eine Periodendauer Tp
+
+<ul>
+<li><img src="http://latex.codecogs.com/gif.latex?%28dQ%29/%28dt%29%3Di%28t%29%5Cqquad%281/T_p%29*%5Cint_T_p%28i%28t%29dt%29%3D0" alt="equation" />
+
+<ul>
+<li>z.B. sinusförmig
+
+<ul>
+<li><img src="http://latex.codecogs.com/gif.latex?i%28t%29%3D%5Chat%7BI%7Dsin%28wt%29%3D%5Chat%7BI%7Dsin%28%28%282%5Cpi%29/T_p%29*t%29" alt="equation" /></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Bezeichnungsweise</p>
+
+<ul>
+<li>Zeitwerte mit Kleinbuchstaben
+
+<ul>
+<li><img src="http://latex.codecogs.com/gif.latex?i%28t%29" alt="equation" /></li>
+</ul>
+</li>
+<li>Mittelwerte - insbesondere auch Gleichgrößen - mit Großbuchstaben
+
+<ul>
+<li><img src="http://latex.codecogs.com/gif.latex?I" alt="equation" /></li>
+</ul>
+</li>
+<li>Amplituden mit Großbuchstaben der (mit Dach)
+
+<ul>
+<li><img src="http://latex.codecogs.com/gif.latex?%5Chat%7BI%7D" alt="equation" /></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Potentiale und Spannungen</h2>
+
+<p>Ursache für Strömung einer Flüssigkeit im Rohr ist die Druckdifferenz:</p>
+
+<p><img src="http://latex.codecogs.com/gif.latex?%5Cbegin%7Bmatrix%7D%20p1-p2%20%3D%200%20%26%20-%20%5C%5C%20p1-p2%20%3E%200%20%26%20v.l.n.r%20%5C%5C%20p1-p2%20%3C%200%20%26%20v.r.n.l%20%5Cend%7Bmatrix%7D" alt="equation" /></p>
+
+<p>Analogie: Elektrische Potentialdifferenz - Spannung U - führt zu Stromfluß in einem Widerstand R</p>
+
+<p><img src="http://latex.codecogs.com/gif.latex?%5Cbegin%7Bmatrix%7D%20U%3D0%20%26%20i%3D0%5C%5C%20U%3E0%20%26%20i%3E0%5C%5C%20U%3C0%20%26%20i%3C0%20%5Cend%7Bmatrix%7D" alt="equation" /></p>
+
+<p>Einheit</p>
+
+<p><img src="http://latex.codecogs.com/gif.latex?%5Bu%5D%20%3D%20V%5C%3BVolt" alt="equation" /></p>
+
+<h2>Widerstand</h2>
+
+<p>Fluß durch ein Rohr ist begrenzt, hängt von Druckdifferenz ab -> Rohr setzt Fluß Widerstand entgegen.
+Analogie: in einem elektrischen Widerstand R ist Strom proportional zu Spannung  u
+* (1.3) Ohmsches Gesetz:
+    * <img src="http://latex.codecogs.com/gif.latex?R%3D%28u/i%29" alt="equation" />
+    * Einheit
+        * <img src="http://latex.codecogs.com/gif.latex?%5BR%5D%3D%5Bu%5D/%5Bi%5D%3DV/A%3D%5COmega%5C%3BOhm" alt="equation" /></p>
+
+<p>Widerstand R eines Leiters nimmt
+* mit steigender Länge l zu
+* mit steigender Querschnittsfläche ab
+* Spezifischer Widerstand
+    * <img src="http://latex.codecogs.com/gif.latex?R%3D%5Cvarrho*1/A" alt="equation" />
+    * <img src="http://latex.codecogs.com/gif.latex?%5Cvarrho%3D%28%5BR%5D%5BA%5D%29/%5Bl%5D%20%3D%20%5Cfrac%7B%28%5COmega*m%5E2%29%7D%7Bm%7D%20%3D%20%5COmega%20m" alt="equation" />
+    * temperaturabhängig mit Temperaturkoeffizienten &lsquo;alpha&rsquo;
+        * &lsquo;alpha&rsquo; für lineare Näherung:
+            * <img src="http://latex.codecogs.com/gif.latex?%5Cvarrho%28t%29%3D%5Cvarrho%28T_0%29*%281&amp;plus;%5Calpha%20%28T-T_0%29%29" alt="equation" />
+        * &lsquo;alpha&rsquo; und &lsquo;beta&rsquo; für quadratische Näherung
+            * <img src="http://latex.codecogs.com/gif.latex?%5Cvarrho%28t%29%3D%5Cvarrho%28T_0%29%281&amp;plus;%5Calpha%28T-T_0%29&amp;plus;%5Cbeta%28T-T0%29%5E2%29" alt="equation" />
+            * mit Temperatur T, für die &lsquo;rho&rsquo; angegeben werden soll, und Bezugstemperatur T0, für die &lsquo;alpha&rsquo; und &lsquo;beta&rsquo; angegeben werden.
+    * <img src="http://latex.codecogs.com/gif.latex?%5BT%5D%5BT0%5D%3DK%5C%3BKelvin%20%5Cquad%5B%5Calpha%5D%3DK%5E%7B-1%7D%5B%5Cbeta%5D%3DK%5E%7B-2%7D" alt="equation" />
+        * wobei für Konstantan &lsquo;alpha&rsquo;=0
+    * (1.5) Kehrwert ist der Leitwert
+        * <img src="http://latex.codecogs.com/gif.latex?G%3D1/R" alt="equation" />
+        * Einheit
+            * <img src="http://latex.codecogs.com/gif.latex?%5BG%5D%20%3D%201/%5BR%5D%20%3D%201/%5COmega%20%3D%20S%5C%3B%20Siemens" alt="equation" />
+            * für einen Leiter entsprechend (1.4)
+                * <img src="http://latex.codecogs.com/gif.latex?G%20%3D%20K*%28A/l%29" alt="equation" /> (1.6) mit spezifischem Leitwert K als temperaturabhängiger Materialkonstante
+                * Einheit
+                    * <img src="http://latex.codecogs.com/gif.latex?%5BK%5D%20%3D%201/%5B%5Cvarrho%5D%20%3D%201/%5B%5COmega*m%5D%20%3D%20S/m" alt="equation" /></p>
+
+<p>Folgende Betrachtung zunächst am Beispiel elektrischer Widerstände; weitere Bauelemente mit anderem Verhalten, z.B.
+* Induktivitäten 2.3.1
+* Kapazitäten 2.3.2
+* Halbleiter AET2</p>
+
+<h2>Leistung und Energie</h2>
+
+<p>auf eine &ldquo;Scheibe&rdquo; A in einem Rohr wirkt wegen Druckdifferenz zwischen Rohrenden eine Kraft
+* <img src="http://latex.codecogs.com/gif.latex?F%3D%28p_1-p_2%29*a" alt="equation" />
+* A werde mit Geschwindigkeit <img src="http://latex.codecogs.com/gif.latex?v%20%3D%20dl/dt" alt="equation" /> verschoben
+* -> innerhalb eines Zeitintervalls dt wird ein Volumen A*dl verschoben
+    * Leisung <img src="http://latex.codecogs.com/gif.latex?p%20%3D%20F*%28dl/dt%29%3D%28p_1-p_2%29*A*%28dl/dt%29" alt="equation" />
+* Analogie: elektrische Leistung bei Stromfluß mit Spannungsabfall
+    * (1.7) <img src="http://latex.codecogs.com/gif.latex?p%28t%29%3Du%28t%29*%28dQ/dt%29%3Du%28t%29*i%28t%29%29%29" alt="equation" />
+    * Einheit
+        * <img src="http://latex.codecogs.com/gif.latex?%5Bp%5D%3D%5Bu%5D%5Bi%5D%3DV*A%3DW%5C%3BWatt" alt="equation" />
+    * verrichtete Arbeit
+        * (1.8) <img src="http://latex.codecogs.com/gif.latex?W%20%3D%20%5Cint%20p%28t%29dt%3D%20%5Cint%20u%28t%29*%28du/dt%29*dt" alt="equation" />
+    * bei konstanter Spannung u(t)=u
+        * (1.9) <img src="http://latex.codecogs.com/gif.latex?W%3DU*%5Cint%20%28dQ/dt%29dt%3DU*Q" alt="equation" />
+    * Einheit
+        * <img src="http://latex.codecogs.com/gif.latex?%5BW%5D%3D%5Bu%5D%5BQ%5D%3DV*A*s%3DWs%3DJ%20%5C%3BWattsekunden/%20Joule" alt="equation" />
+    * Widerstand R nimmt bei Stromfluß i elektrische Leistung auf -> Umwandlung in Wärme
+        * (1.10) <img src="http://latex.codecogs.com/gif.latex?p%28t%29%3Du%28t%29*i%28t%29%3Du%5E%7B2%7D/R%3DR*i%5E%7B2%7D" alt="equation" /></p>
+
+<h2>Quellen</h2>
+
+<p>Leistung, die u.a. in Widerständen verbraucht wird muß wegen Energieerhaltung an anderer Stelle abgegeben werden - z.B. von
+* Spannungsquellen
+    * <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Quelle_U-Schaltzeichen.svg/150px-Quelle_U-Schaltzeichen.svg.png" alt="schaltsymbol" />
+    * U ist vorgegeben, i stellt sich abhängig von der Last ein
+        * <img src="http://latex.codecogs.com/gif.latex?i%3D%28U/R%29" alt="equation" />
+    * <img src="http://latex.codecogs.com/gif.latex?p%3Du*i" alt="equation" />
+        * kann positiv sein -> Spannungsquelle gibt Leistung ab z.B. in Verbindung mit Widerstand &reg;
+        * kann negativ sein -> Spannungsquelle nimmt Leistung auf
+* Stromquellen
+    * <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/International_graphic_symbols_of_current_source.png/330px-International_graphic_symbols_of_current_source.png" alt="schaltsymbol" />
+    * i ist vorgegeben, U stellt sich abhängig von der Last ein, hier
+        * <img src="http://latex.codecogs.com/gif.latex?u%20%3D%20R%20*%20i" alt="equation" />
+    * <img src="http://latex.codecogs.com/gif.latex?p%20%3D%20u*i" alt="equation" />
+        * kann positiv sein -> Stromquelle gibt Leistung ab, z.B. in Verbindung mit einem Widerstand
+        * kann negativ sein -> Stromquelle nimmt Leistung auf
+* Zählweisen
+    * Verbraucher-Bezugspfeilsystem (z.B. am Widerstand)
+        * Element nimmt Leistung auf, für
+            * <img src="http://latex.codecogs.com/gif.latex?p%20%3D%20u*i%20%3E0" alt="equation" />
+        * Element gibt Leistung ab, für
+            * <img src="http://latex.codecogs.com/gif.latex?p%20%3D%20u*i%20%3C0" alt="equation" /></p>
+
+<pre><code>* Erzeuger-Bezugspfeilsystem
+    * Element gibt Leistung ab, für 
+        * ![equation](http://latex.codecogs.com/gif.latex?p%20%3D%20u*i%20%3E0)
+    * Element nimmt Leistung auf, für
+        * ![equation](http://latex.codecogs.com/gif.latex?p%20%3D%20u*i%20%3C%200)
+* Vorzeichen der Größen in Abhängigkeit von Bezugspfeilen zu beachten!
+</code></pre>
+
+<h1>Stromkreise</h1>
+
+<h2>Grundregeln</h2>
+
+<ul>
+<li><p>Strom fließt im Stromkreis</p>
+
+<ul>
+<li>Beispiel: Autobatterie mit Gleichspannung
+
+<ul>
+<li>U=12V speist Scheinwerferlampe mit p=55W</li>
+<li><img src="http://latex.codecogs.com/gif.latex?I%3DP/U%3D55W/12V%3D55VA/12V%3D%2855/12%29A%3D4%2C6A" alt="equation" /></li>
+<li>Batterie gibt Leistung ab, Glühlampe setzt in Wärme und Licht um</li>
+<li>mit Sicherung <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Fuse_symbol_Europe.svg/90px-Fuse_symbol_Europe.svg.png" alt="schaltsymbol" />
+
+<ul>
+<li>dünner Draht, wird bei Stromfluß heiß, brennt bei Überstrom durch</li>
+<li>zusätzlicher Spannungsabfall U_Sicherung -> U_Bat != U_Lampe</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>im Stromkreis mit mehr als zwei Elementen können mehrere Knoten und Maschen vorhanden sein
+
+<ul>
+<li>Knoten (Verknüpfungspunkte mehrerer Leitungen)</li>
+<li>Maschen (Kleinere Kreise im Stromkreis)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Knotenregel (Kirchhoff)</p>
+
+<ul>
+<li>Rohrnalogie: in Rohrverzweigung fließt gleich viel Flüssigkeit hinein wie hinaus</li>
+<li>Die Summe aller auf einen Knoten zufließenden Ströme ist gleich der Summe aller der von diesem Knoten wegfließenden Ströme
+
+<ul>
+<li>einfachster Fall <img src="http://latex.codecogs.com/gif.latex?i_1%3Di_2&amp;plus;i_3" alt="equation" /></li>
+<li>i_1 fließt auf Knoten zu, i_2, i_3 fließen von Knoten weg</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Maschenregel</p>
+
+<ul>
+<li>Rohranalogie: Über verschiedene Leitungsverbindungen fällt die gleiche Druckdifferenz p_1-p_2 ab</li>
+<li>Die Summe aller Spannungen beim vollständigen Umlauf einer Masche ist Null</li>
+<li>Zählweise
+
+<ul>
+<li>Spannungen in Richtung des Umlaufes positiv</li>
+<li>Spannungen gegen die Richtung des Umlaufs negativ</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Berechnung von Netzwerken mit Widerständen</h2>
+
+<h3>Parallelschaltung, Stromteiler</h3>
+
+<ul>
+<li>an Widerständen R_1&hellip;R_n liegt bei Parallelschaltung die gleiche Spannung U_0 an</li>
+<li><img src="http://latex.codecogs.com/gif.latex?i_k%3DU_0/R_k" alt="equation" />
+
+<ul>
+<li>Stromaufteilung antiproportional zu den Widerständen R_k</li>
+</ul>
+</li>
+<li>(2.1)
+
+<ul>
+<li><img src="http://latex.codecogs.com/gif.latex?i_0%20%3D%20%5Csum%20_%7Bk%3D1%7D%5E%7Bn%7DU_0/R_k%3DU_0*%5Csum_%7Bk%3D1%7D%5E%7Bn%7D1/R_k" alt="equation" /></li>
+</ul>
+</li>
+<li>(2.2)
+
+<ul>
+<li><img src="http://latex.codecogs.com/gif.latex?R_0%3DU_o/i_0%3D1/%28%5Csum_%7Bk%3D1%7D%5En1/R_k%29" alt="equation" /></li>
+</ul>
+</li>
+<li>Beispiel mit zwei Widerständen R_1, R_2
+
+<ul>
+<li>(2.3)
+
+<ul>
+<li><img src="http://latex.codecogs.com/gif.latex?R_0%20%3D%201%20/%20%28%281/R_1%29&amp;plus;%281/R_2%29%29%20%3D%20%28R_1*R_2%29/%28R_1&amp;plus;R_2%29" alt="equation" /></li>
+</ul>
+</li>
+<li>Gesamtwiderstand R_0 &lt; R_1 und R_0 &lt; R_2 !</li>
+<li>Anteiliger Stromfluß durch R_1 -> Stromteiler (2.4)
+
+<ul>
+<li><img src="http://latex.codecogs.com/gif.latex?%28i_1/i_0%29%20%3D%20%28i_1/%28i_1&amp;plus;i_2%29%29%20%3D%20%28U_0/R_1%29/%28%28U_0/R_1%29&amp;plus;%28U_0/R_2%29%29" alt="equation" /></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Beispiel mit n gleichen Widerständen parallelgeschaltet
+
+<ul>
+<li><img src="http://latex.codecogs.com/gif.latex?R_0%3D1/%28n/r%29%3DR/n" alt="equation" /></li>
+<li>Anwendung: Meßbereichserweiterung für Strommeßer (Amperemeter)</li>
+</ul>
+</li>
+</ul>
+</body>
+</html>

@@ -539,3 +539,103 @@ Speichert Ladung - Analogie: durch Membran unterbrochenes, flüssigkeitgefüllte
 		* der Phasenlage \varphi u für t=0
 		* dem Stromzeiger \underline{I} um \pi/2 vorauseilend
 		* rotierend mit \omega t
+* ![graph](https://raw.github.com/barthimaeus/AET1/master/ImRe.png)	
+	
+* Schlußfolgerung
+	* mit \omega t rotierende Zeiger für Spannung \underline{U} und Strom \underline{I}
+	* an
+		* Widerstand R (3.17)
+		* Kapazität C (3.17)
+		* Induktivität L (3.28)
+	* Beziehungen zwischen Zeigern gegeben für
+		* Widerstand R (3.21)
+		* Kapazität C (3.24)
+		* Induktivität L (3.29)
+		* ohne Einfluss der Rotation \omega t
+	* Berechnung stationärer Wechselgrößen möglich
+		* mit ruhenden Zeigern ^=t=0
+		* mit Blindwiderständen statt Differentialgleichungen
+	* mit Blindwiderstand X statt Differentialgleichung
+		* Kapazität C kapazitiv (3.24)
+			* ![eq](http://latex.codecogs.com/gif.latex?%5Cfrac%7B-1%7D%7B%5Comega%20C%7D)
+		* Induktivität L induktiv (3.24)
+			* ![eq](http://latex.codecogs.com/gif.latex?%5Comega%20l)
+	* vereinfachte Netzwerkberechnung
+
+### Berechnung von Netzwerken
+* Parallelschaltung von R,L,C
+	* ![schaltung](https://www.dropbox.com/s/gzfheyhqxhpmq66/2012-11-20%2009.29.37.jpg)
+	* Maschenregel: u liegt an R,C,L an
+		* mit (3.21)
+			* ![eq](http://latex.codecogs.com/gif.latex?%5Cunderline%7BI%7D%3D%5Cfrac%7BU%7D%7BR%7D)
+		* mit (3.23)
+			* ![eq](http://latex.codecogs.com/gif.latex?%5Cunderline%7BI_c%7D%3Dj*%5Comega*C*%5Cunderline%7BU%7D)
+		* mit (3.24)
+			* ![eq](http://latex.codecogs.com/gif.latex?%5Cunderline%7BI_L%7D%3D%5Cfrac%7B1%7D%7Bj*%5Comega*L%7D*%5Cunderline%7BU%7D)
+		* Knotenregel (3.30)
+			* ![eq](http://latex.codecogs.com/gif.latex?%5Cunderline%7BI%7D%3D%5Cunderline%7BI_R%7D&plus;%5Cunderline%7BI_C%7D&plus;%5Cunderline%7BI_L%7D%20%5C%5C%20%3D%5Cunderline%7BU%7D%28%5Cfrac%7B1%7D%7BR%7D&plus;j*%28%5Comega*C-%5Cfrac%7B1%7D%7B%5Comega*L%7D%29%29%29)
+		* komplexe Impedanz (3.31), (3.32)
+			* ![eq](http://latex.codecogs.com/gif.latex?%5Cunderline%7BZ%7D%3D%5Cfrac%7B%5Cunderline%7BU%7D%7D%7B%5Cunderline%7BI%7D%7D%20%5C%5C%20%3D%20%5Cfrac%7B1%7D%7B%5Cfrac%7B1%7D%7BR%7D&plus;j%28%5Comega%20C-%5Cfrac%7B1%7D%7B%5Comega%20C%7D%29%7D%20%5C%5C%20%3D%20%5Cfrac%7B%5Cfrac%7B1%7D%7BR%7D-j%28%5Comega%20C-%5Cfrac%7B1%7D%7B%5Comega%20L%7D%29%7D%7B%5Cfrac%7B1%7D%7BR%7D&plus;%28%5Comega%20C-%5Cfrac%7B1%7D%7B%5Comega%20L%7D%29%5E2%7D)
+		* Wirkwiderstand (3.33)
+			* ![eq](http://latex.codecogs.com/gif.latex?Re%5C%7BZ%5C%7D%3D%5Cfrac%7B1%7D%7B%5Cfrac%7B1%7D%7BR%7D&plus;R*%28%5Comega%20C-%5Cfrac%7B1%7D%7B%5Comega%20L%7D%29%5E2%7D)
+		* Blindwiderstand (3.34), (3.35)
+			* ![eq](http://latex.codecogs.com/gif.latex?X%3DIm%5C%7B%5Cunderline%7BZ%7D%5C%7D%5C%5C%20%3D%5Cfrac%7B%5Cfrac%7B1%7D%7B%5Comega%20C%7D-%5Comega%20C%7D%7B%5Cfrac%7B1%7D%7BR%5E2%7D&plus;%28%5Comega%20C-%5Cfrac%7B1%7D%7B%5Comega%20L%7D%29%5E2%7D)
+		* Scheinwiderstand
+			* ![eq](http://latex.codecogs.com/gif.latex?%7CZ%7C%20%3D%20%5Cfrac%7B%5Csqrt%7B%5Cfrac%7B1%7D%7BR%5E2%7D&plus;%28%5Comega%20C%20-%20%5Cfrac%7B1%7D%7B%5Comega%20L%7D%29%5E2%7D%7D%7B%5Cfrac%7B1%7D%7BR%5E2%7D&plus;%28%5Comega%20C-%5Cfrac%7B1%7D%7B%5Comega%20L%7D%29%5E2%7D%20%5C%5C%20%3D%5Cfrac%7B1%7D%7B%5Csqrt%7B%5Cfrac%7B1%7D%7BR%5E2%7D&plus;%28%5Comega%20C%20-%20%5Cfrac%7B1%7D%7B%5Comega%20L%7D%29%5E2%7D%7D)
+		* Zeigerdarstellung
+			* ![img](https://www.dropbox.com/s/3ltdd5mmsjp3brz/2012-11-20%2009.29.43.jpg)
+			* Geometrische Addition der Stromzeiger nach (3.30)
+* Reihenschaltung von R,C,L
+	* ![schaltung](https://www.dropbox.com/s/64ux573m6gybmll/2012-11-20%2009.29.52.jpg)
+	* mit
+		* (3.21) ![eq](http://latex.codecogs.com/gif.latex?%5Cunderline%7BU_R%7D%3DR*%5Cunderline%7BI%7D)
+		* (3.24) ![eq](http://latex.codecogs.com/gif.latex?%5Cunderline%7BU_C%7D%3D%5Cfrac%7B-j%7D%7B%5Comega%20C%7D*%5Cunderline%7BI%7D)
+		* (3.29) ![eq](http://latex.codecogs.com/gif.latex?%5Cunderline%7BU_L%7D%3Dj%20%5Comega%20L*%5Cunderline%7BI%7D)
+	* Maschenregel (3.37)
+		* ![eq](http://latex.codecogs.com/gif.latex?%5Cunderline%7BU%7D%3D%5Cunderline%7BU_L%7D&plus;%5Cunderline%7BU_C%7D&plus;%5Cunderline%7BU_L%7D%5C%5C%20%3D%5Cunderline%7BI%7D%28R&plus;j%28%5Comega%20L%20-%5Cfrac%7B1%7D%7B%5Comega%20C%7D%29%29)
+	* Komplexe Impedanz (3.38)
+		* ![eq](http://latex.codecogs.com/gif.latex?%5Cunderline%7BZ%7D%3DR&plus;j%28%5Comega%20L-%5Cfrac%7B1%7D%7B%5Comega%20C%7D%29)
+	* Wirkwiderstand (3.39)
+		* ![eq](http://latex.codecogs.com/gif.latex?Re%5C%7BZ%5C%7D%3DR)
+	* Blindwiderstand (3.40)
+		* ![eq](http://latex.codecogs.com/gif.latex?X%3D%5Comega%20L-%5Cfrac%7B1%7D%7B%5Comega%20C%7D)
+	* Scheinwiderstand (3.41)
+		* ![eq](http://latex.codecogs.com/gif.latex?%7CZ%7C%3D%5Csqrt%7BR%5E2&plus;%28%5Comega%20C-%5Cfrac%7B1%7D%7B%5Comega%20C%7D%29%5E2%7D)
+	* Zeigerdarstellung
+		* ![img](https://www.dropbox.com/s/v69qf7vlzsl5om8/2012-11-20%2009.29.57.jpg)
+		* Geometrische Addition der Spannungszeiger nach (3.37)
+* Sonderfall: Resonanz (3.42)
+	* ![eq](http://latex.codecogs.com/gif.latex?%5Comega_0%20L%3D%5Cfrac%7B1%7D%7B%5Comega_0%20C%7D%20%5C%5C%20%3D%3E%20%5Comega_0%3D%5Cfrac%7B1%7D%5Csqrt%7B%7B%5Comega%20C%7D%7D)
+	* Blindwiderstand des Parallelschwingkreises (3.35) X=0
+	* Serienschwingkreises (3.40) X=0
+	* Kreisfrequenz \omega_0, bei der sich die Zeiger von C und L kompensieren
+	* Parallelschwingkreis
+		* \omega -> 0, Kein Spannungsabfall tritt auf an L
+			* ![eq](http://latex.codecogs.com/gif.latex?%5Clim_%7B%5Comega%20%5Crightarrow%200%7D%7CZ%7C%3D0)
+			* ![eq](http://latex.codecogs.com/gif.latex?%5Comega%20%3D%20%5Comega_0)
+			* ![img](https://www.dropbox.com/s/2ejw6sgavyapmn0/2012-11-20%2009.30.21.jpg)
+			* Schwingung zwischen L und C
+				* ![eq](http://latex.codecogs.com/gif.latex?%5Cunderline%7BI_L%7D%3D-%5Cunderline%7BI_C%7D)
+				* unabhängig von \underline{i} => \underline{Z} = R
+		* \omega -> \infty, kein Spannungsabfall an C
+			* ![eq](http://latex.codecogs.com/gif.latex?%5Clim_%7B%5Comega%20%5Crightarrow%20%5Cinfty%7D%20%7CZ%7C%3D0)
+			* ![img](https://www.dropbox.com/s/2w6c5rjaipuv21p/2012-11-20%2009.30.18.jpg)
+	* Serienschwingkreis
+		* \omega -> 0: Kein Stromfluß durch C
+			* ![eq](http://latex.codecogs.com/gif.latex?%5Clim_%7B%5Comega%20%5Crightarrow%200%7D%20%7CZ%7C%3D%5Cinfty)
+			* ![eq](http://latex.codecogs.com/gif.latex?%5Comega%20%3D%20%5Comega_0)
+			* ![img](https://www.dropbox.com/s/ervpjy08p5un1hk/2012-11-20%2009.30.30.jpg)
+			* Schwingung zwischen L und C
+				* ![eq](http://latex.codecogs.com/gif.latex?%5Cunderline%7BU_L%7D%3D-%5Cunderline%7BU_C%7D)
+				* unabhängig von \underline{U}, \underline{Z} = R
+		* \omega -> \infty: kein Stromfluß durch L
+			* ![eq](http://latex.codecogs.com/gif.latex?%5Clim_%7B%5Comega%20%5Crightarrow%20%5Cinfty%7D%7CZ%7C%3D%5Cinfty)
+			* ![img](https://www.dropbox.com/s/ru8wsm42br8zwk9/2012-11-20%2009.30.25.jpg)
+			
+## Leistung
+Von Verbraucher - z.B. Schwingkreisen - aufgenommene Leistung
+	* ![eq](http://latex.codecogs.com/gif.latex?u%28t%29%3D%5C%5E%7BU%7Dcos%28%5Comega%20t%20&plus;%20%5Cvarphi%20u%29%5C%5C%20i%28t%29%3D%5C%5E%7BI%7Dcos%28%5Comega%20t%20&plus;%20%5Cvarphi%20u%20-%20%5Cvarphi%29)
+	* mit (1.7)
+		* ![eq](http://latex.codecogs.com/gif.latex?p%28t%29%3D%5C%5EU%5C%5EIcos%28%5Comega%20t&plus;%20%5Cvarphi%20u%29cos%28%5Comega%20t%20&plus;%5Cvarphi%20u%20-%20%5Cvarphi%29%5C%5C%20%3D%5Cfrac%7B%5C%5EU%5C%5EI%7D%7B2%7D%28cos%28%5Cvarphi%29&plus;cos%282%5Comega%20t&plus;2%5Cvarphi%20u-%5Cvarphi%29%29%5C%5C%20%3DUI*%28cos%28%5Cvarphi%29*%281&plus;cos%282%5Comega%20t&plus;2%5Cvarphiu%29%29%29&plus;sin%28%5Cvarphi%29*sin%282%5Comega%20t&plus;2%5Cvarphi%20u%29)
+		* ![img](https://dl-web.dropbox.com/get/Camera%20Uploads/2012-11-20%2010.32.31.jpg?w=d17bdaa4)
+	
